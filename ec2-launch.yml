@@ -18,5 +18,4 @@
         image: "{{ image }}"
         assign_public_ip: yes
         wait: no
-        state: running
         count: 1
