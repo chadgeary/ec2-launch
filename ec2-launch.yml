@@ -6,6 +6,9 @@
   become: true
   become_user: root
   tasks:
+    - pip:
+        name: boto
+
     - ec2:
         instance_type: "{{ instance_type }}"
         group_id: "{{ group_id }}"
