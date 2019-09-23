@@ -7,12 +7,12 @@
   become_user: root
   tasks:
     - ec2:
-        instance_type: {{ instance_type }}
-        group_id: {{ security_group }}
-        vpc_subnet_id: {{ subnet_id }}
-        key_name: {{ key_name }}
-        region: {{ region_name }}
-        image: {{ image_id }}
+        instance_type: "{{ instance_type }}"
+        group_id: "{{ security_group }}"
+        vpc_subnet_id: "{{ subnet_id }}"
+        key_name: "{{ key_name }}"
+        region: "{{ region_name }}"
+        image: "{{ image_id }}"
         assign_public_ip: yes
         wait: no
         state: running
