@@ -1,6 +1,6 @@
 ---
 - name: package-updates
-  hosts: localhost
+  hosts: "{{ target }}"
   gather_facts: yes
   vars:
   become: true
