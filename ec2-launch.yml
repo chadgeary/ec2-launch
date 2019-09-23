@@ -8,11 +8,11 @@
   tasks:
     - ec2:
         instance_type: "{{ instance_type }}"
-        group_id: "{{ security_group }}"
-        vpc_subnet_id: "{{ subnet_id }}"
+        group_id: "{{ group_id }}"
+        vpc_subnet_id: "{{ vpc_subnet_id }}"
         key_name: "{{ key_name }}"
-        region: "{{ region_name }}"
-        image: "{{ image_id }}"
+        region: "{{ region }}"
+        image: "{{ image }}"
         assign_public_ip: yes
         wait: no
         state: running
