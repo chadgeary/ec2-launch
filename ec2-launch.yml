@@ -1,8 +1,7 @@
 ---
-- name: package-updates
+- name: ec2-laucnh
   hosts: localhost
   gather_facts: yes
-  vars:
   become: false
   connection: local
   tasks:
